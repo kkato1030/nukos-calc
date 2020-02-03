@@ -1,0 +1,17 @@
+{
+  "name": "nukos-calc",
+  "version": "1.0.0",
+  "description": "分類 1. イテレーション(milestone) 2. open / close",
+  "main": "index.js",
+  "dependencies": {
+    "serverless": "^1.50.0",
+    "serverless-python-requirements": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

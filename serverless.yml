@@ -1,0 +1,26 @@
+service: nukos-calc
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: python3.7
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  nukos-calc:
+    name: nukos-calc
+    handler: handler.main
+    timeout: 30
+    events:
+    - schedule: cron(0 1 ? * MON-FRI *)
+    - schedule: cron(0 10 ? * MON-FRI *)
+
+package:
+  exclude:
+  - Pipfile
+  - Pipfile.lock
+  - README.md
+  - package-lock.json
+  - node_modules/**

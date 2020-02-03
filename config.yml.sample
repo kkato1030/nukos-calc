@@ -1,0 +1,5 @@
+GITHUB_TOKEN: xxxx
+SLACK_WEBHOOK_URL: https://hooks.slack.com/services/xxxx
+SLACK_TEAM_ID: SHXXXXX
+TARGET_REPOSITORY:
+  - repositoryname
